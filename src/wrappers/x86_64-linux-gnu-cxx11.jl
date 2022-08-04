@@ -3,14 +3,14 @@ export clang, ld_lld, libclang, libclang_cpp, libclangbasic, liblldcore, libllvm
 
 using Zlib_jll
 JLLWrappers.@generate_wrapper_header("ROCmLLVM")
-JLLWrappers.@declare_library_product(libclang, "libclang.so.12git")
-JLLWrappers.@declare_library_product(libclang_cpp, "libclang-cpp.so.12git")
+JLLWrappers.@declare_library_product(libclang, "libclang.so.13git")
+JLLWrappers.@declare_library_product(libclang_cpp, "libclang-cpp.so.13git")
+JLLWrappers.@declare_library_product(liblto, "libLTO.so.13git")
 JLLWrappers.@declare_executable_product(clang)
 JLLWrappers.@declare_executable_product(ld_lld)
 JLLWrappers.@declare_file_product(libclangbasic)
 JLLWrappers.@declare_file_product(liblldcore)
 JLLWrappers.@declare_file_product(libllvmcore)
-JLLWrappers.@declare_library_product(liblto, "libLTO.so.12git")
 JLLWrappers.@declare_executable_product(llc)
 JLLWrappers.@declare_executable_product(lld)
 JLLWrappers.@declare_executable_product(llvm_config)
@@ -26,6 +26,12 @@ function __init__()
     JLLWrappers.@init_library_product(
         libclang_cpp,
         "llvm/lib/libclang-cpp.so",
+        nothing,
+    )
+
+    JLLWrappers.@init_library_product(
+        liblto,
+        "llvm/lib/libLTO.so",
         nothing,
     )
 
@@ -52,12 +58,6 @@ function __init__()
     JLLWrappers.@init_file_product(
         libllvmcore,
         "llvm/lib/libLLVMCore.a",
-    )
-
-    JLLWrappers.@init_library_product(
-        liblto,
-        "llvm/lib/libLTO.so",
-        nothing,
     )
 
     JLLWrappers.@init_executable_product(

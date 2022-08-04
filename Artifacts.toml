@@ -1,20 +1,20 @@
 [[ROCmLLVM]]
 arch = "x86_64"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "1384a5b60cbf354f1980eb85c3cb931e434c7c29"
+git-tree-sha1 = "3098966c93c8f7807ddf58a4d6a98e620457381c"
 libc = "glibc"
 os = "linux"
 
     [[ROCmLLVM.download]]
-    sha256 = "2c5efd2247e044f0e60c0cf00cf8a44b9e2ff084c457de617c9fe0f64e5f6e16"
-    url = "https://github.com/JuliaBinaryWrappers/ROCmLLVM_jll.jl/releases/download/ROCmLLVM-v4.2.0+1/ROCmLLVM.v4.2.0.x86_64-linux-gnu-cxx11.tar.gz"
+    sha256 = "d0e3aec55c6928c52a998437019e4a7e924723561b3ddefc441692044dbf467f"
+    url = "https://github.com/JuliaBinaryWrappers/ROCmLLVM_jll.jl/releases/download/ROCmLLVM-v4.5.2+0/ROCmLLVM.v4.5.2.x86_64-linux-gnu-cxx11.tar.gz"
 [[ROCmLLVM]]
 arch = "x86_64"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "08d8c4613c4301e02e254f1f6023a5db42c7a3c5"
+git-tree-sha1 = "1174f90415753cb5abf199573817aef00fc953c9"
 libc = "musl"
 os = "linux"
 
     [[ROCmLLVM.download]]
-    sha256 = "8cb978e0c8d230514c574264926e6bb7047f47eb8b9414d2d27ca7fdb9c44fd0"
-    url = "https://github.com/JuliaBinaryWrappers/ROCmLLVM_jll.jl/releases/download/ROCmLLVM-v4.2.0+1/ROCmLLVM.v4.2.0.x86_64-linux-musl-cxx11.tar.gz"
+    sha256 = "92efad1e73e4e136b6248a2e118f518f7d33d6e7294624e6147200a68a9dea65"
+    url = "https://github.com/JuliaBinaryWrappers/ROCmLLVM_jll.jl/releases/download/ROCmLLVM-v4.5.2+0/ROCmLLVM.v4.5.2.x86_64-linux-musl-cxx11.tar.gz"
